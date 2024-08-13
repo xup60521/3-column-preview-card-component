@@ -10,6 +10,10 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
    - [Built with](#built-with)
 
+   - [What I learned](#what-i-learned)
+
+        - [Element entry animation](#element-entry-animation)
+
 - [Resources](#resources)
 
 ## Overview
@@ -44,6 +48,28 @@ pnpm run build
 - TailwindCSS
 
 - Vite - for bundling assets
+
+### What I learned
+
+#### Element entry animation
+
+When dealing with many elements simultaneously, GSAP needs some adjustment.
+
+```ts
+import gsap from "gsap";
+
+const cards = gsap.utils.toArray<HTMLElement>(".card");
+cards.forEach((card, index) => {
+    card.style.display = "flex";
+    gsap.fromTo(
+        card,
+        { opacity: 0, y: 100 },
+        { opacity: 1, y: 0, delay: 0.1 * index, duration: 0.12 * index + 0.5, ease: "power2.out" }
+    );
+});
+```
+
+Each card component has a `card` class name, and I loop over these elements to change their delay and duration. In so doing, the entry animation looks better.
 
 ## Resources
 
