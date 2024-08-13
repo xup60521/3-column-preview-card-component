@@ -7,19 +7,16 @@ export default {
     theme: {
         extend: {
             colors: {
-                c_Soft_red: "hsl(7, 99%, 70%)",
-                c_Yellow: "hsl(51, 100%, 49%)",
-                c_Dark_desaturated_cyan: "hsl(167, 40%, 24%)",
-                c_Dark_blue: "hsl(198, 62%, 26%)",
-                c_Dark_moderate_cyan: "hsl(168, 34%, 41%)",
-                c_Very_dark_desaturated_blue: "hsl(212, 27%, 19%)",
-                c_Very_dark_grayish_blue: "hsl(213, 9%, 39%)",
-                c_Dark_grayish_blue: "hsl(232, 10%, 55%)",
-                c_Grayish_blue: "hsl(210, 4%, 67%)",
+                c_Bright_orange: "hsl(31, 77%, 52%)",
+                c_Dark_cyan: "hsl(184, 100%, 22%)",
+                c_Very_dark_cyan: "hsl(179, 100%, 13%)",
+                c_Transparent_white: "hsla(0, 0%, 100%, 0.75)",
+                c_Very_light_gray: "hsl(0, 0%, 95%)",
+
             },
             fontFamily: {
-                barlow: ["Barlow", "sans-serif"],
-                frounces: ["Fraunces", "serif"]
+                big_shoulders: ["Big Shoulders Display", "sans-serif"],
+                lexend_deca: ["Lexend Deca", "sans-serif"]
             }
         },
     },
